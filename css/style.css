@@ -1,0 +1,220 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header h1 {
+    font-family: "theblacklist", sans-serif;
+    font-size: 2.5em;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+header h2 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    width: 400px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    background: #1d1d1d;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+/* NAV */
+nav ul {
+    padding: 0;
+    display: inline;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li:hover {
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    text-align: center;
+    background: #fff;
+    box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+/* CONTENT SECTIONS */
+section.presentation h3,
+section.projets h3,
+section.contact h3,
+section h3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+section.presentation h3:before,
+section.projets h3:before,
+section.contact h3:before,
+section h3:before {
+    content: "\00AB";
+    color: gray;
+}
+
+section.presentation h3:after,
+section.projets h3:after,
+section.contact h3:after,
+section h3:after {
+    content: "\00BB";
+    color: gray;
+}
+
+section.presentation,
+section.projets,
+section.contact,
+section {
+    text-align: center;
+}
+
+/* SECTION DES PAGES PROJETS */
+
+section ul li,
+ol li {
+    list-style: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #1d1d1d;
+    color: #fff;
+    padding: 15px;
+}
+
+/* ID */
+#logo {
+    margin-top: 20px;
+    width: 100px;
+}
+
+#projet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contact a {
+    text-decoration: none;
+    color: black;
+}
+
+#contact {
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+#picture-project,
+#picture-project iframe {
+    width: 100%;
+}
+
+#picture-project iframe {
+    height: 315px;
+}
+
+/* CLASSES */
+.separator {
+    width: 40px;
+    height: 1px;
+    margin: 15px auto;
+    display: block;
+    background: #999999;
+}
+
+.contener {
+    width: 80%;
+    margin: auto;
+}
+
+.projet {
+    width: 470px;
+    margin: 30px;
+    display: inline-block;
+    background: white;
+    padding-bottom: 15px;
+    border: 0px black solid;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.projet:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.projet img {
+    min-width: 470px;
+    height: 260px;
+}
+
+.projet span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.projet .date-project {
+    font-size: 0.7em;
+}
+
+.evidence {
+    font-weight: bolder;
+    color: black ;
+
+}
+
+
+/* POLICES */
+@font-face {
+    font-family: "theblacklist";
+    src: url("../src/theblacklist.ttf") format("truetype");
+}
+
+/* MEDIA */
+@media all and (max-width: 1000px) {
+    .projet {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .projet img {
+        width: 100%;
+        min-width: auto;
+        height: auto;
+    }
+
+    .projet .picture {
+        width: 100%;
+        height: auto;
+    }
+
+    header h2 {
+        width: 90%;
+    }
+}
